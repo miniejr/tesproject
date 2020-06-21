@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Css Untuk Header dan navigasi */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #090722;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 20px 2%;
+    position: fixed;
+
+    z-index: 2;
+
+}
+
+header .logo {
+    height: 50px;
+    right: auto;
+    margin-right: auto;
+}
+
+header h1 {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: auto;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.nav-list {
+    list-style: none;
+
+
+}
+
+.nav-list li {
+    display: inline-block;
+    padding-left: 50px;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+li a .active,
+li a:hover {
+    border: 1px solid white;
+    transition: .5s;
+}
+
+/* ------------------------------------------------------------------- */
+
+main {
+    width: 100%;
+}
+
+/* css bagian konten utama (Home) */
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px 100px;
+
+}
+
+section .bg {
+    margin-top: 100px;
+    max-width: 700px;
+    float: left;
+}
+
+#home .container h1 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 50px;
+    color: #d63031;
+}
+
+#home {
+    height: auto;
+    position: relative;
+    top: 50px;
+
+
+}
+
+span {
+    line-height: 50px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #2f3542;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#home .container h1,
+p {
+    font-family: 'Play', sans-serif;
+    color: #57606f;
+}
+
+span:hover {
+    background-color: black;
+}
+
+/* animasi pada kontent utama */
+.container .ml15 {
+    font-weight: 800;
+    font-size: 3.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.container .ml15 .word {
+    display: inline-block;
+    line-height: 1em;
+}
+
+/* ----------------------------- ----------------------------------------------------*/
+
+/* Css pada konten tambahan(Page project) */
+#project {
+    margin-top: 200px;
+    background-color: #353b48;
+    height: 100vh;
+    padding-top: 100px;
+    font-family: 'Play', sans-serif;
+}
+
+#project h1 {
+    text-align: center;
+    color: white;
+}
+
+.container {
+    padding: 100px;
+}
+
+.project {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.box-project {
+    position: relative;
+}
+
+.box-project p {
+    color: white;
+}
+
+.imglist {
+    width: 250px;
+    height: 250px;
+    margin: 40px;
+}
+
+.project .txt {
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #b3aeb5;
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* Css pd kontent tambahan (Page tentang kami) */
+#about {
+
+    background-color: whitesmoke;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+#about h1 {
+    text-align: center;
+    font-family: 'Play', sans-serif;
+}
+
+.profil {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.box-profil {
+    position: relative;
+}
+
+.box-profil .imgprofil {
+    width: 250px;
+}
+
+.profil p {
+    font-weight: bolder;
+}
+
+.profil .txt-profil {
+    font-weight: lighter;
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #b3aeb5;
+}
+
+/* ----------------------------------------------------------- */
+/* Form Pesan */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #2f3542;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #576574;
+}
+
+#contact {
+    background-color: #353b48;
+    height: 70vh;
+
+}
+
+#contact h1 {
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    color: whitesmoke;
+
+}
+
+#contact .container {
+    font-family: 'Play', sans-serif;
+    max-width: 500px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: auto;
+}
+
+/* -------------------------------------------------------------- */
+/* AwalFooter */
+footer {
+    background-color: #090722;
+    height: 23vh;
+}
+
+footer .container {
+
+    padding: 30px;
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+footer .container .logo {
+    width: 100px;
+    height: 50px;
+    right: auto;
+}
+
+footer h2 {
+    font-size: 10px;
+}
+
+
+
+.container-footer {
+    width: 100%;
+    left: 200px;
+    text-align: center;
+
+}
+
+.list-footer ul {
+    list-style: none;
+}
+
+.list-footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+
+.list-footer {
+    float: left;
+    width: 20%;
+    margin-left: 150px;
+}
+
+.isi-footer {
+    position: relative;
+
+}
+
+footer p,
+a {
+    text-align: center;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Akhir Footer */
