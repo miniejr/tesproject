@@ -10,13 +10,12 @@
         top: 50px;
     }
 
-    #project {
-        height: 160vh;
-    }
+    
 
-    .project {
+   .lesson {
+
         width: 50%;
-        padding-bottom: 50px;
+        padding: 20px;
     }
 
     #about {
@@ -40,7 +39,9 @@
 
 
 @media all and (max-width:670px) {
-    #home {}
+    .lesson {
+        width: 100%;
+    }
 
     #home .container {
         text-align: center;
@@ -169,16 +170,8 @@
 
 @media all and (max-width:360px) {
 
-    .icon-project img {
-        width: 150px;
-    }
-
     #about .about .icon-about img {
         width: 100px;
-    }
-
-    #project {
-        height: 300vh;
     }
 
     #about {
