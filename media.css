@@ -10,9 +10,7 @@
         top: 50px;
     }
 
-    
-
-   .lesson {
+    .lesson {
 
         width: 50%;
         padding: 20px;
@@ -39,9 +37,7 @@
 
 
 @media all and (max-width:670px) {
-    .lesson {
-        width: 100%;
-    }
+
 
     #home .container {
         text-align: center;
@@ -136,16 +132,9 @@
 
     }
 
-    #project.container {}
+    .lesson {
 
-    .project {
         width: 100%;
-
-
-    }
-
-    #project {
-        height: 290vh;
     }
 
     #about {
@@ -170,9 +159,15 @@
 
 @media all and (max-width:360px) {
 
+    .icon-project img {
+        width: 150px;
+    }
+
     #about .about .icon-about img {
         width: 100px;
     }
+
+
 
     #about {
         height: 340vh;
