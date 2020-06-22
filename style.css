@@ -5,6 +5,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 /* Css Untuk Header dan navigasi */
 header {
     display: flex;
@@ -64,10 +66,6 @@ li a:hover {
 
 /* ------------------------------------------------------------------- */
 
-main {
-    width: 100%;
-}
-
 /* css bagian konten utama (Home) */
 section {
     position: relative;
@@ -94,6 +92,7 @@ section .bg {
     height: auto;
     position: relative;
     top: 50px;
+    margin-bottom: 250px;
 
 
 }
@@ -135,178 +134,142 @@ span:hover {
 /* ----------------------------- ----------------------------------------------------*/
 
 /* Css pada konten tambahan(Page project) */
+
 #project {
-    margin-top: 200px;
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: #353b48;
-    height: 100vh;
-    padding-top: 100px;
-    font-family: 'Play', sans-serif;
-}
-
-#project h1 {
     text-align: center;
-    color: white;
+    min-height: 100vh;
+
+
 }
 
-.container {
-    padding: 100px;
+#project .title {
+    font-family: 'Play', sans-serif;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
 }
 
 .project {
     float: left;
     width: 25%;
-    text-align: center;
 }
 
-.box-project {
+.icon-project {
     position: relative;
 }
 
-.box-project p {
+.icon-project p {
+    margin-top: 30px;
     color: white;
 }
 
-.imglist {
-    width: 250px;
-    height: 250px;
-    margin: 40px;
+
+.icon-project img {
+    width: 300px;
 }
 
-.project .txt {
+.txt {
     width: 80%;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 5px;
     font-size: 15px;
     color: #b3aeb5;
 }
+
 
 /* ---------------------------------------------------------------------- */
 
 /* Css pd kontent tambahan (Page tentang kami) */
+
 #about {
 
-    background-color: whitesmoke;
-    height: 100vh;
-    padding-top: 100px;
-}
-
-#about h1 {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
     text-align: center;
-    font-family: 'Play', sans-serif;
+    height: 80vh;
+
+
 }
 
-.profil {
+#about .title {
+    font-family: 'Play', sans-serif;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: black;
+}
+
+.about {
     float: left;
     width: 20%;
-    text-align: center;
 }
 
-.box-profil {
+.icon-about {
     position: relative;
 }
 
-.box-profil .imgprofil {
+.icon-about p {
+    margin-top: 50px;
+    color: black;
+}
+
+
+.icon-about img {
     width: 250px;
 }
 
-.profil p {
-    font-weight: bolder;
+.about .txt {
+    padding-bottom: 40px;
 }
 
-.profil .txt-profil {
-    font-weight: lighter;
-    width: 80%;
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 15px;
-    color: #b3aeb5;
-}
+
 
 /* ----------------------------------------------------------- */
-/* Form Pesan */
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical
-}
-
-input[type=submit] {
-    background-color: #2f3542;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #576574;
-}
-
-#contact {
-    background-color: #353b48;
-    height: 70vh;
-
-}
-
-#contact h1 {
-    font-family: 'Play', sans-serif;
-    text-align: center;
-    padding-top: 30px;
-    margin-bottom: 50px;
-    color: whitesmoke;
-
-}
-
-#contact .container {
-    font-family: 'Play', sans-serif;
-    max-width: 500px;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: auto;
-}
 
 /* -------------------------------------------------------------- */
 /* AwalFooter */
 footer {
-    background-color: #090722;
-    height: 23vh;
-}
-
-footer .container {
-
-    padding: 30px;
     display: flex;
-    color: white;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-}
-
-footer .container .logo {
-    width: 100px;
-    height: 50px;
-    right: auto;
-}
-
-footer h2 {
-    font-size: 10px;
-}
-
-
-
-.container-footer {
+    align-items: center;
+    background-color: #222831;
     width: 100%;
-    left: 200px;
-    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 2%;
+}
+
+
+
+.imgfooter {
+
+    width: 30px;
+    height: auto;
+
+}
+
+.imgfoot {
+    top: 100px;
+    width: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer .list-footer {
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 20px 2%;
+
 
 }
 
@@ -314,30 +277,17 @@ footer h2 {
     list-style: none;
 }
 
-.list-footer ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 10px;
+.list-footer li {
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
 }
 
-.list-footer {
-    float: left;
-    width: 20%;
-    margin-left: 150px;
-}
 
-.isi-footer {
-    position: relative;
 
-}
 
-footer p,
-a {
-    text-align: center;
-    color: white;
-    list-style: none;
-    text-decoration: none;
-    font-size: 12px;
+.clear {
+    clear: left;
 }
 
 /* Akhir Footer */
